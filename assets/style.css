@@ -1,0 +1,107 @@
+@font-face {
+  font-family: "Oswald";
+  src: url("assets/fonts/Oswald-Regular.ttf") format("truetype");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Oswald", Arial, "Helvetica Neue", Helvetica, sans-serif;
+  color: rgb(255, 255, 255);
+  background-color: rgba(255, 0, 0, 0.8);
+  transition: background 500ms ease;
+}
+
+body.dark {
+  background-color: #1e1e1e;
+  color: #eeeeee;
+}
+
+#darkmode {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+}
+
+#alpaka {
+  position: fixed;
+  bottom: -750px; 
+  left: 50%;
+  transform: translateX(-50%);
+  width: 200px;
+  transition: bottom 1s ease-out;
+  z-index: 999;
+  width: 600px;
+  height: 800px;
+}
+
+
+body.dark #alpaka {
+  bottom: 20px; /* 하단에서 20px 위로 등장 */
+}
+
+
+
+.circle {
+  width: 2300px;
+  height: 2300px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 50%;
+  position: absolute;  
+  top: 100px;          
+  left: 600px;
+}
+
+p, li {
+  font-size: 25px;
+  line-height: 32px;
+}
+
+#left-column {
+	padding: 20px;
+}
+
+h1, p {
+	margin-bottom:  20px;
+	font-size: 50px;
+}
+
+ul, ol {
+	margin-left: 20px;
+}
+
+img {
+	max-width: 100%;
+	height:  auto;
+}
+.cursive {
+  font-family: cursive;
+}
+
+/* uncomment the code below to set the grid */
+
+/*#grid {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+}
+
+body {
+	overflow: hidden;
+}
+
+.scroll {
+	padding:  20px;
+	overflow: scroll;
+	height: 100vh;
+}
+
+#left-column {
+}
+
+#right-column {
+	background: #333;
+}*/
